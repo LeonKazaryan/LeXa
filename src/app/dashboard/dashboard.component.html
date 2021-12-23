@@ -1,0 +1,16 @@
+<div class="html__container">
+  <ul class="dashboard">
+    <li *ngFor="let route of routes" (click)="navigateTo(route.path)" class="button-82-pushable">
+      <span class="button-82-shadow"></span>
+      <span class="button-82-edge"></span>
+      <span class="button-82-front text">
+        {{route.viewValue}}
+      </span>
+    </li>
+  </ul>
+  <router-outlet></router-outlet>
+</div>
+<!-- HTML !-->
+<button class="button-82-pushable" role="button">
+
+</button>
