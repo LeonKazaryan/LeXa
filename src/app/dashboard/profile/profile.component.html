@@ -1,1 +1,20 @@
-<p>profle works!</p>
+<div class="content">
+  <div class="user_logo">
+    <img [src]="user.avatar" alt="" class="user_avatar">
+    <p class="user_data user_name">{{user.name}}</p>
+  </div>
+    <div class="cards_list">
+      <div class="card" *ngFor="let card of userCards">
+        <img class="card__logo" [src]="card.img" alt="">
+        <span class="card__name">{{card.name}}</span>
+        <div class="card__hp">
+          <i class="fas fa-heart"></i>
+          {{card.hp}}
+        </div>
+        <div class="card__damage">
+          <i class="fas fa-fist-raised"></i>
+          {{card.damage}}
+        </div>
+      </div>
+    </div>
+</div>

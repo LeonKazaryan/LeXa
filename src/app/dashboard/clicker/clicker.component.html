@@ -1,1 +1,22 @@
-<p>clicker works!</p>
+  <div class="clicker__content">
+    <div class="count" id="cardPiecesCount">{{cardPiecesCount.toFixed(0)}}</div>
+    <button class="button-53 clicker_button" role="button" (click)="addCardPiece()">CLick!</button>
+    <div class="upgrades_field">
+  <!--    <p>-->
+      <span>Card pieces per Click (+<span id="cardCLickPerClick">{{cardPiecesPerClickUpdate.cardPiecesPerClick.toFixed(1)}}</span>): </span>
+        <span>{{cardPiecesPerClickUpdate.cost}}</span>
+        <button class="button-29 upgrade_button" role="button" (click)="upgradeClicks('cardPiecesPerClick')">UPGRADE!</button>
+        <div class="warn" *ngIf="lowMoney">
+          you don't have enough money for upgrade!
+        </div>
+  <!--    </p>-->
+  <!--    <p>-->
+  <!--      <span>Auto click: </span>-->
+  <!--      <span>{{autoClickPerSecondUpdater.cost}}</span>-->
+  <!--      <button class="button-54" role="button" (click)="upgradeClicks('autoClick')">BUY</button>-->
+  <!--    </p>-->
+  <!--    <p>-->
+  <!--      <button (click)="enableAutoClicker()">Enable auto clicker</button>-->
+  <!--    </p>-->
+    </div>
+  </div>

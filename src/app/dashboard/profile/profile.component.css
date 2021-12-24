@@ -1,0 +1,64 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  font-family: 'M PLUS 1 Code', sans-serif;
+  width: 80%;
+  height: 100%;
+  margin-left: 200px;
+}
+.user_logo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.user_name {
+  padding: 20px 0 0 0;
+  font-size: 40px;
+}
+.user_avatar {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 5px solid #33a9a9;
+}
+.cards_list {
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.card {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  padding: 10px 5px;
+  border: 2px solid black;
+  transition: .2s;
+  background-color: #fff;
+}
+.card:hover {
+  transform: scale(1.2);
+}
+.card__hp {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+.card__damage {
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+}
+.card__logo {
+  width: 200px;
+  height: 200px;
+}
